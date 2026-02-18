@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECサイト運用ディレクター | 鉄壁の信頼感</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0A192F',
+                            800: '#112240',
+                            700: '#233554',
+                        },
+                        gold: {
+                            400: '#E6C85C',
+                            500: '#D4AF37',
+                            600: '#B89628',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #0A192F;
+            color: #E6F1FF;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-gold-500 selection:text-navy-900">
+
+    <!-- Header / Nav -->
+    <header class="fixed w-full top-0 z-50 bg-navy-900/90 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-xl tracking-wider text-gold-500">PORTFOLIO</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#problem" class="text-sm font-medium hover:text-gold-500 transition-colors">課題解決</a>
+                    <a href="#skills" class="text-sm font-medium hover:text-gold-500 transition-colors">スキル</a>
+                    <a href="#service" class="text-sm font-medium hover:text-gold-500 transition-colors">サービス</a>
+                    <a href="#profile" class="text-sm font-medium hover:text-gold-500 transition-colors">プロフィール</a>
+                </nav>
+                <div>
+                    <a href="#contact"
+                        class="inline-flex items-center px-4 py-2 border border-gold-500 text-sm font-medium rounded-sm text-gold-500 hover:bg-gold-500 hover:text-navy-900 transition-all duration-300">
+                        お問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-16">
+        <div
+            class="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop')] bg-cover bg-center">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-navy-900/90 via-navy-900/80 to-navy-900 z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="lg:w-2/3">
+                <p class="text-gold-500 font-bold tracking-widest mb-4 text-sm md:text-base animate-fade-in-up">EC SITE
+                    DIRECTOR / PLAYING MANAGER</p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 tracking-tight text-white drop-shadow-lg">
+                    運用も、改修も、進行管理も。<br>
+                    ECサイトの『現場』を止めない、<br>
+                    <span class="text-gold-500 border-b-4 border-gold-500 pb-1">プレイングマネージャー</span>。
+                </h1>
+                <p
+                    class="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-2xl bg-navy-900/50 backdrop-blur-sm p-4 rounded-lg border-l-4 border-gold-500">
+                    大手〜中規模ECサイトでのディレクション経験と、<br class="hidden md:block">
+                    自らコードを書ける技術力で、御社のWeb事業を安定稼働させます。
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact"
+                        class="bg-gold-500 text-navy-900 px-8 py-4 rounded-sm font-bold text-lg hover:bg-gold-400 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)] text-center">
+                        無料相談・見積もり依頼
+                    </a>
+                    <a href="#"
+                        class="border border-white/30 bg-white/5 backdrop-blur text-white px-8 py-4 rounded-sm font-medium text-lg hover:bg-white/10 transition-all duration-300 text-center">
+                        経歴書をダウンロード
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div
+            class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce opacity-70">
+            <span class="text-xs tracking-widest mb-2 text-slate-400">SCROLL</span>
+            <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Content Placeholder -->
+    <main>
+        <!-- Problem & Solution Section -->
+        <section id="problem" class="py-20 bg-white text-navy-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Me?</h2>
+                    <p class="text-gold-600 font-bold tracking-widest">選ばれる理由、解決できる課題</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Pain Points -->
+                    <div
+                        class="bg-gray-100 p-8 rounded-lg shadow-inner relative overflow-hidden group hover:shadow-lg transition-shadow duration-300">
+                        <div
+                            class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gray-300 rounded-full opacity-50 blur-xl">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-6 flex items-center">
+                            <span
+                                class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 text-sm">!</span>
+                            Common Client Pain Points
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                <span>修正依頼のたびに制作会社に見積もるのが手間...</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                <span>ディレクターが技術を理解しておらず、伝言ゲームになる。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                                <span>指示待ちで、プラスアルファの提案が出てこない。</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Solution (Arrow in between for desktop could be nice, currently implicit) -->
+
+                    <!-- My Value -->
+                    <div
+                        class="bg-navy-900 text-white p-8 rounded-lg shadow-xl relative overflow-hidden transform md:-translate-x-4 border border-gold-500 hover:scale-105 transition-transform duration-300 z-10">
+                        <div
+                            class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-gold-500 rounded-full opacity-10 blur-xl">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-6 flex items-center text-gold-500">
+                            <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            My Solution
+                        </h3>
+                        <div class="space-y-4">
+                            <p class="text-lg font-bold border-b border-white/20 pb-2">
+                                技術がわかるディレクターだから、<br>
+                                「話が早い」「手も動く」「品質が高い」。
+                            </p>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                要件定義から実作業（HTML/CSS/JS修正、CMS入稿）までワンストップで対応可能です。
+                                外部制作会社への発注コストやコミュニケーションロスを大幅に削減し、スピード感のあるEC運営を実現します。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-navy-800 border-t border-white/5 relative">
+            <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent">
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Skills & Expertise</h2>
+                    <p class="text-gold-500 font-medium tracking-widest">「できること」の再定義</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Direction -->
+                    <div
+                        class="bg-navy-900 border border-white/10 p-8 rounded hover:border-gold-500/50 transition-colors duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-navy-700 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-gold-500 group-hover:text-navy-900" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Direction & Management</h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            特集ページやLPの制作進行、スケジュール管理、要件定義、クライアント折衝。
+                            ビジネスゴールを見据えた提案型のディレクションを行います。
+                        </p>
+                        <ul class="text-sm text-gold-400 space-y-1">
+                            <li>• 制作進行管理</li>
+                            <li>• 要件定義・構成案作成</li>
+                            <li>• アクセス解析・改善提案</li>
+                        </ul>
+                    </div>
+
+                    <!-- Technical -->
+                    <div
+                        class="bg-navy-900 border border-white/10 p-8 rounded hover:border-gold-500/50 transition-colors duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-navy-700 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-gold-500 group-hover:text-navy-900" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Technical Operation</h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            HTML/CSS/JavaScriptによる直接の修正対応が可能。
+                            単なる作業ではなく、デバッグ・検証・クリエイティブチェックまで完遂します。
+                        </p>
+                        <ul class="text-sm text-gold-400 space-y-1">
+                            <li>• HTML5 / CSS3 (Tailwind)</li>
+                            <li>• JavaScript (jQuery / Vanilla)</li>
+                            <li>• CMS運用 (Shopify / WP / MakeShop)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Quality -->
+                    <div
+                        class="bg-navy-900 border border-white/10 p-8 rounded hover:border-gold-500/50 transition-colors duration-300 group">
+                        <div
+                            class="w-14 h-14 bg-navy-700 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors duration-300">
+                            <svg class="w-8 h-8 text-gold-500 group-hover:text-navy-900" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">Quality Control</h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            バナーや画像の修正指示、表示崩れの検証、マルチデバイス対応チェック。
+                            ユーザー目線での厳格な品質管理で、サイトの信頼性を守ります。
+                        </p>
+                        <ul class="text-sm text-gold-400 space-y-1">
+                            <li>• マルチデバイス検証</li>
+                            <li>• リンク・表示チェック</li>
+                            <li>• 運用マニュアル作成</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Menu Section -->
+        <section id="service" class="py-20 bg-white text-navy-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Service Menu</h2>
+                    <p class="text-gold-600 font-bold tracking-widest">具体的な提供価値</p>
+                    <div class="w-16 h-1 bg-gold-500 mx-auto mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Spot -->
+                    <div
+                        class="bg-slate-50 border border-slate-200 p-8 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-gold-500 text-4xl mb-4 font-bold">01</div>
+                        <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2">スポット対応<br><span
+                                class="text-sm font-normal text-slate-500">（LP制作進行・改修）</span></h3>
+                        <p class="text-slate-600 mb-6 text-sm">
+                            急な修正依頼や、単発のLP制作ディレクションに対応。
+                            「今すぐ直したい」「来週までに公開したい」というご要望にお応えします。
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside bg-white p-4 rounded">
+                            <li>LP制作ディレクション</li>
+                            <li>バナー制作指示・管理</li>
+                            <li>HTML/CSS修正</li>
+                        </ul>
+                    </div>
+
+                    <!-- Monthly -->
+                    <div
+                        class="bg-navy-900 text-white p-8 rounded-lg shadow-xl scale-105 border-2 border-gold-500 relative">
+                        <div
+                            class="absolute top-0 right-0 bg-gold-500 text-navy-900 text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-bl">
+                            Popular</div>
+                        <div class="text-gold-500 text-4xl mb-4 font-bold">02</div>
+                        <h3 class="text-xl font-bold mb-4 border-b border-white/20 pb-2">月額運用サポート<br><span
+                                class="text-sm font-normal text-slate-300">（更新代行・品質管理）</span></h3>
+                        <p class="text-slate-300 mb-6 text-sm">
+                            ECサイトの「守り」を固める定額プラン。
+                            定期的な更新作業、商品登録、エラーチェックなど、安定稼働を支えます。
+                        </p>
+                        <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside bg-navy-800 p-4 rounded">
+                            <li>週次/月次の定例更新</li>
+                            <li>商品データCSV入稿</li>
+                            <li>サイト死活監視・エラー対応</li>
+                        </ul>
+                    </div>
+
+                    <!-- Consulting -->
+                    <div
+                        class="bg-slate-50 border border-slate-200 p-8 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-gold-500 text-4xl mb-4 font-bold">03</div>
+                        <h3 class="text-xl font-bold mb-4 border-b border-gray-300 pb-2">EC運用コンサルティング<br><span
+                                class="text-sm font-normal text-slate-500">（業務フロー改善）</span></h3>
+                        <p class="text-slate-600 mb-6 text-sm">
+                            現場が疲弊しないための「仕組み」を作ります。
+                            無駄な作業の削減、ツールの導入、マニュアル化を支援します。
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside bg-white p-4 rounded">
+                            <li>運用フローの見直し</li>
+                            <li>業務マニュアル作成</li>
+                            <li>外注管理・コスト適正化</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="py-20 bg-gray-100 relative overflow-hidden">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div
+                    class="bg-white p-8 md:p-12 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div
+                        class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 bg-navy-900 rounded-lg overflow-hidden relative shadow-md">
+                        <!-- Placeholder for Profile Image -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-navy-900 to-navy-700 flex items-center justify-center text-white/20">
+                            <svg class="w-20 h-20" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-bold mb-2 text-navy-900">Profile</h2>
+                        <p class="text-gold-600 font-bold mb-4">EC Site Director</p>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            2018年より、年商10億円規模のアパレルECサイトにて、サイト更新・キャンペーン進行管理・システム改修のディレクションに従事。
+                            「現場を知るディレクター」として、デザイナーやエンジニアとの共通言語を持ち、円滑なプロジェクト進行を得意とする。
+                            現在はフリーランスとして、中小〜大手企業のEC運用代行、業務改善コンサルティングを行っています。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 text-sm font-bold text-navy-800">
+                            <div class="border-l-4 border-gold-500 pl-3">
+                                <span class="block text-xs text-slate-500 font-normal">Years of Experience</span>
+                                6+ Years
+                            </div>
+                            <div class="border-l-4 border-gold-500 pl-3">
+                                <span class="block text-xs text-slate-500 font-normal">Completed Projects</span>
+                                100+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-navy-900 relative">
+            <div
+                class="absolute inset-0 z-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5">
+            </div>
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white">Contact Me</h2>
+                <p class="text-lg text-slate-300 mb-12">
+                    制作・運用のご相談、お見積もりなど、お気軽にお問い合わせください。<br>
+                    24時間以内にご返信心たします。
+                </p>
+
+                <form class="space-y-6 text-left bg-white/5 p-8 rounded-lg backdrop-blur-sm border border-white/10">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-slate-300 mb-2">お名前 / 貴社名</label>
+                        <input type="text" id="name"
+                            class="w-full px-4 py-3 bg-navy-800 border border-gray-600 rounded text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-colors"
+                            placeholder="山田 太郎">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-300 mb-2">メールアドレス</label>
+                        <input type="email" id="email"
+                            class="w-full px-4 py-3 bg-navy-800 border border-gray-600 rounded text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-colors"
+                            placeholder="info@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-slate-300 mb-2">お問い合わせ内容</label>
+                        <textarea id="message" rows="4"
+                            class="w-full px-4 py-3 bg-navy-800 border border-gray-600 rounded text-white focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition-colors"
+                            placeholder="ご相談内容をご記入ください"></textarea>
+                    </div>
+                    <div class="text-center pt-4">
+                        <button type="button"
+                            class="w-full sm:w-auto px-8 py-4 bg-gold-500 text-navy-900 font-bold rounded hover:bg-gold-400 transition-colors shadow-lg transform hover:-translate-y-1">
+                            送信する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <footer class="bg-navy-900 border-t border-white/10 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-slate-400 text-sm">
+            &copy; 2026 takumi takahashi. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
